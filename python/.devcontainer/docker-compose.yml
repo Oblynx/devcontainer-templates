@@ -12,8 +12,6 @@ services:
     volumes:
       # Mount the local directory into the container
       - ..:/workspace:cached
-    env_file:
-      - ".env"
     command: sleep infinity # Keep the container running
 
 volumes:
