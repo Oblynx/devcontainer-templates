@@ -46,7 +46,6 @@
     }
   },
   "features": {
-    "docker-from-docker": "latest",
-    "git": "os-provided"
+    "docker-from-docker": "latest"
   }
 }
