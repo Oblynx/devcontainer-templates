@@ -1,17 +1,16 @@
-version: '3.8'
+version: '3.9'
 
 services:
   devcontainer:
     container_name: PythonDevcontainer
+    user: vscode
     build:
       context: .
       dockerfile: Dockerfile
       args:
         PYTHON_VERSION: "3.11"
-    network_mode: host
+    #network_mode: host
     volumes:
       # Mount the local directory into the container
       - ..:/workspace:cached
     command: sleep infinity # Keep the container running
-
-volumes:
